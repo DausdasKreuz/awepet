@@ -1,8 +1,23 @@
-import React from 'react'
+import './styles.scss'
+//import React from 'react'
 import ReactDOM from 'react-dom'
+import {CardFactory} from './card'
+import {collection} from './collection'
+const pet = collection[0]
+const cardConfig = {
+  title: pet.name,
+  image: pet.photo,
+  text: pet.description,
+}
 
-const App = () => (
-  <h1>Awepets!</h1>
+
+ReactDOM.render(
+  CardFactory.createCard(cardConfig),
+  // eslint-disable-next-line no-undef
+  document.getElementById('app'),
 )
-
-ReactDOM.render(<App />, document.getElementById('app'))
+ReactDOM.render(
+  CardFactory.createCard(cardConfig),
+  // eslint-disable-next-line no-undef
+  document.getElementById('app'),
+)

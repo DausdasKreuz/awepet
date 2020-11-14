@@ -1,0 +1,67 @@
+$green: #EEFACE;
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $green;
+}
+
+.card {
+  width:280px;
+  display: block;
+  margin: 60px auto;
+  box-shadow: 10px 5px 40px 20px darken($green, 5%);
+  transition: .25s;
+
+  &:hover {
+    box-shadow: 10px 5px 40px 20px darken($green, 10%);
+    cursor: pointer;
+
+    .button-primary {
+      transform: translate(10px, 0);
+    }
+  }
+}
+
+.card-header {
+  height: 150px;
+  width: 100%;
+  padding: 15px;
+  width:100%;
+  background-size:cover;
+  color:#fff;
+}
+
+.card-body {
+  padding: 15px;
+  background-color:#fff;
+  width:100%;
+}
+
+.body-content {
+  padding-bottom: 40px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.button-primary {
+  border: none;
+  box-shadow: none;
+  font-family: inherit;
+  background-color:transparent;
+  color: $green;
+  font-size: 15px;
+  transition:.25s;
+
+  i{
+    padding-right:4px;
+  }
+}
+
+
+.designer-link {
+  color:#fff;
+  text-align:center;
+  fon-size: 12px;
+  text-decoration: none;
+  display:block;
+}
