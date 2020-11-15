@@ -3,12 +3,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {CardFactory} from './card'
 import {collection} from './collection'
-const pet = collection[0]
-const cardConfig = {
-  title: pet.name,
-  image: pet.photo,
-  text: pet.description,
-}
+
 
 function createContent(){
   return collection.map(pet => {
@@ -23,7 +18,7 @@ function createContent(){
 class PageContainer extends React.Component {
   render() {
     return (
-      createContent()
+      <div className="page-container">{createContent()}</div>
     )
   }
 }

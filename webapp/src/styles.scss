@@ -5,10 +5,16 @@ body, html {
   background-color: $green;
 }
 
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   width:280px;
-  display: block;
-  margin: 60px auto;
+  display: inline-block;
+  margin: 60px 60px ;
   box-shadow: 10px 5px 40px 20px darken($green, 5%);
   transition: .25s;
 
@@ -55,13 +61,4 @@ body, html {
   i{
     padding-right:4px;
   }
-}
-
-
-.designer-link {
-  color:#fff;
-  text-align:center;
-  fon-size: 12px;
-  text-decoration: none;
-  display:block;
 }
