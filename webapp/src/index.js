@@ -1,25 +1,22 @@
 import './styles.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {CardFactory} from './card'
-import {collection} from './collection'
+import {LinePageFactory} from './linePage'
+import {getSelectionPageConfig} from './config'
 
-
-function createContent(){
-  return collection.map(pet => {
-    return CardFactory.createCard({
-      title: pet.name,
-      image: pet.photo,
-      text: pet.description,
-    })
-  })
-}
 
 class PageContainer extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {pageType: 'selection'}
+  }
   render() {
-    return (
-      <div className="page-container">{createContent()}</div>
-    )
+    switch (this.state.pageType) {
+    case 'selection':
+      return (
+        <div className="page-container">{LinePageFactory.createPage(getSelectionPageConfig())}</div>
+      )
+    }
   }
 }
 

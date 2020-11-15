@@ -19,7 +19,7 @@ class Button extends React.Component {
   render() {
     return (
       <button className="button button-primary">
-        <i className="fa fa-chevron-right"></i> More
+        <i className="fa fa-chevron-right"/> More
       </button>
     )
   }
@@ -52,7 +52,7 @@ class Card extends React.Component {
 
 class CardFactory {
   static createCard(cardConfig){
-    return <Card image={cardConfig.image} title={cardConfig.title} text={cardConfig.text}></Card>
+    return <Card image={cardConfig.image} title={cardConfig.title} text={cardConfig.text}/>
   }
 }
 

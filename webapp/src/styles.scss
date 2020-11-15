@@ -5,7 +5,7 @@ body, html {
   background-color: $green;
 }
 
-.page-container {
+.card-line {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@ body, html {
 
 .card {
   width:280px;
-  display: inline-block;
+  display: block;
   margin: 60px 60px ;
   box-shadow: 10px 5px 40px 20px darken($green, 5%);
   transition: .25s;
@@ -54,7 +54,7 @@ body, html {
   box-shadow: none;
   font-family: inherit;
   background-color:transparent;
-  color: $green;
+  color: hotpink;
   font-size: 15px;
   transition:.25s;
 
