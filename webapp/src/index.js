@@ -1,41 +1,55 @@
 import './styles.scss'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {LinePageFactory} from './linePage'
-import {createSelectionPageConfigFromCollection} from './config'
+import { LinePageFactory } from './linePage'
+import { CardFactory } from './card'
+import {
+  createSelectionPageConfig,
+  createCardConfig,
+} from './config'
+import * as api from './api'
 import * as dbApi from './dbApi'
-import {CardFactory} from "./card";
 
 
 class PageContainer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      pageType: 'selection',
+      type: 'selection',
       pets: [],
-      selectedId: '',
+      selectedPetId: '',
+      pet:{},
     }
   }
   componentDidMount() {
-    dbApi.getList('pets')
-      .then(pets => {
-        this.setState({pets: pets})
-      })
+    switch (this.state.type){
+    case 'selection':
+      dbApi.getList('pets')
+      //api.getPets()
+        .then(pets => {
+          this.setState({pets: pets})
+        })
+      break
+    case 'profile':
+      api.showPet(this.state.selectedPetId)
+        .then(pet => {
+          this.setState({pet: pet})
+        })
+      break
+    }
   }
   render() {
-    switch (this.state.pageType) {
+    switch (this.state.type) {
     case 'selection':
       return (
         <div className="page-container">
-          {LinePageFactory.createPage(createSelectionPageConfigFromCollection(this.state.pets))}
+          {LinePageFactory.createPage(createSelectionPageConfig(this.state.pets))}
         </div>
       )
     case 'profile':
-      return (
-        <div className="page-container">
-          {CardFactory.createCard(createProfilePageConfigFromCollection(this.state.pets.find(pet => pet.id === this.state.selectedId)))}
-        </div>
-      )
+      return <div className="page-container">
+        {CardFactory.createCard(createCardConfig(this.state.pet))}
+      </div>
     }
   }
 }

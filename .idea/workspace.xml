@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e3d46da-318b-4a29-8d19-6ce38246f414" name="Default Changelist" comment="" />
+    <list default="true" id="6e3d46da-318b-4a29-8d19-6ce38246f414" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/dbApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/dbApi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/firebaseFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/linePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/linePage.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +19,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,7 +60,9 @@
       <option name="presentableId" value="Default" />
       <updated>1605365659744</updated>
       <workItem from="1605365660777" duration="2008000" />
-      <workItem from="1605367682167" duration="3066000" />
+      <workItem from="1605367682167" duration="14728000" />
+      <workItem from="1605425730210" duration="3558000" />
+      <workItem from="1605432061421" duration="38669000" />
     </task>
     <servers />
   </component>
@@ -51,9 +70,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="856" y="404" key="#ESLint" timestamp="1605372074617">
-      <screen x="67" y="0" width="1853" height="1080" />
+    <state x="690" y="323" key="#ESLint" timestamp="1605397679745">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
+    <state x="690" y="323" key="#ESLint/63.0.1473.864@63.0.1473.864" timestamp="1605397679745" />
     <state x="856" y="404" key="#ESLint/67.0.1853.1080@67.0.1853.1080" timestamp="1605372074617" />
     <state width="1273" height="251" key="GridCell.Tab.0.bottom" timestamp="1605367669778">
       <screen x="67" y="0" width="1853" height="1080" />
@@ -71,5 +91,13 @@
       <screen x="67" y="0" width="1853" height="1080" />
     </state>
     <state width="1273" height="251" key="GridCell.Tab.0.right/67.0.1853.1080@67.0.1853.1080" timestamp="1605367669778" />
+    <state x="648" y="250" key="run.anything.popup" timestamp="1605439133615">
+      <screen x="63" y="0" width="1857" height="1080" />
+    </state>
+    <state x="648" y="250" key="run.anything.popup/63.0.1857.1080@63.0.1857.1080" timestamp="1605439133615" />
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup" timestamp="1605428413220">
+      <screen x="63" y="0" width="1473" height="864" />
+    </state>
+    <state x="463" y="182" width="672" height="678" key="search.everywhere.popup/63.0.1473.864@63.0.1473.864" timestamp="1605428413220" />
   </component>
 </project>

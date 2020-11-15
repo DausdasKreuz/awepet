@@ -2,13 +2,9 @@ import React from 'react'
 import {CardLineFactory} from './cardLine'
 
 class LinePage extends React.Component {
-  constructor(props) {
-    super(props)
-    // eslint-disable-next-line react/prop-types
-    this.lines = this.props.lines
-  }
   createPageContent(){
-    return this.lines.map(line => {
+    // eslint-disable-next-line react/prop-types
+    return this.props.lines.map(line => {
       return CardLineFactory.createLine(line)
     })
   }

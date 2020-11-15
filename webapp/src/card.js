@@ -41,8 +41,9 @@ class CardBody extends React.Component {
 
 class Card extends React.Component {
   render() {
+    //ToDo: Components needs key
     return (
-      <article className="card">
+      <article className="card" key={this.props.id}>
         <CardHeader image={this.props.image}/>
         <CardBody title={this.props.title} text={this.props.text}/>
       </article>

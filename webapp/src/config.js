@@ -1,15 +1,14 @@
 const elementsPerLine =3
 
-function createCardConfigFromProfileData(profile){
+function createCardConfig(profile){
   return {
     title: profile.name,
     image: profile.photo,
     text: profile.description,
-    likes: profile.likes,
   }
 }
 
-function createSimpleCardConfigFromProfileData(profile){
+function createSimpleCardConfig(profile){
   return {
     title: profile.name,
     image: profile.photo,
@@ -20,12 +19,12 @@ function createSimpleCardConfigFromProfileData(profile){
 function createLineConfig(profiles){
   const lineConfig =[]
   for (const profile of profiles){
-    lineConfig.push(createSimpleCardConfigFromProfileData(profile))
+    lineConfig.push(createSimpleCardConfig(profile))
   }
   return lineConfig
 }
 
-function createSelectionPageConfigFromCollection(collection){
+function createSelectionPageConfig(collection){
   const pageConfig = []
   for (let lineNumber=0; lineNumber<collection.length/elementsPerLine; lineNumber++){
     const lineProfiles = []
@@ -41,5 +40,8 @@ function createSelectionPageConfigFromCollection(collection){
 
 
 export {
-  createSelectionPageConfigFromCollection,
+  createSelectionPageConfig,
+  createLineConfig,
+  createCardConfig,
+  createSimpleCardConfig,
 }
