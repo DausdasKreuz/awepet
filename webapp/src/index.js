@@ -1,5 +1,5 @@
 import './styles.scss'
-//import React from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import {CardFactory} from './card'
 import {collection} from './collection'
@@ -10,14 +10,26 @@ const cardConfig = {
   text: pet.description,
 }
 
+function createContent(){
+  return collection.map(pet => {
+    return CardFactory.createCard({
+      title: pet.name,
+      image: pet.photo,
+      text: pet.description,
+    })
+  })
+}
+
+class PageContainer extends React.Component {
+  render() {
+    return (
+      createContent()
+    )
+  }
+}
 
 ReactDOM.render(
-  CardFactory.createCard(cardConfig),
-  // eslint-disable-next-line no-undef
-  document.getElementById('app'),
-)
-ReactDOM.render(
-  CardFactory.createCard(cardConfig),
+  <PageContainer />,
   // eslint-disable-next-line no-undef
   document.getElementById('app'),
 )

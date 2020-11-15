@@ -1,14 +1,13 @@
-import React from 'react';
-import {collection} from './collection'
-
+/* eslint-disable react/prop-types */
+import React from 'react'
 
 
 class CardHeader extends React.Component {
   render() {
-    const { image } = this.props;
-    var style = {
+    const { image } = this.props
+    const style = {
       backgroundImage: 'url(' + image + ')',
-    };
+    }
     return (
       <header style={style} id={image} className="card-header">
       </header>
