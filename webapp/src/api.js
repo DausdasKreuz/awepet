@@ -11,7 +11,7 @@ function url(functionName, suffix='') {
 
 function getPets(){
   // eslint-disable-next-line no-undef
-  return fetch(url('/getPets'))
+  return fetch(url('/listPets'))
     .then(res => res.json())
     .then(resMap => Object.keys(resMap).map(id => ({ ...resMap[id], id })))
 }

@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6e3d46da-318b-4a29-8d19-6ce38246f414" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/dbApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/dbApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/firebaseFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webapp/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webapp/src/linePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/webapp/src/linePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +57,8 @@
       <workItem from="1605365660777" duration="2008000" />
       <workItem from="1605367682167" duration="14728000" />
       <workItem from="1605425730210" duration="3558000" />
-      <workItem from="1605432061421" duration="38669000" />
+      <workItem from="1605432061421" duration="39288000" />
+      <workItem from="1605484361281" duration="393000" />
     </task>
     <servers />
   </component>

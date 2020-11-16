@@ -24,8 +24,7 @@ class PageContainer extends React.Component {
   componentDidMount() {
     switch (this.state.type){
     case 'selection':
-      dbApi.getList('pets')
-      //api.getPets()
+      api.getPets()
         .then(pets => {
           this.setState({pets: pets})
         })
